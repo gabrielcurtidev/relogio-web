@@ -16,7 +16,7 @@ body {
 
 h1{
     position: absolute;
-    top: 36%;
+    top: 38%;
     font-size: 20px;
     transition: all 0.1s ease-in;
 }
@@ -107,13 +107,23 @@ h1{
     }
 }
 
-@media screen and (max-height: 630px) {
+@media screen and (max-height: 650px) {
     .profile-img{
         top: 68%;  
     }
 
     h1{
         top: 31%;
+    }
+}
+
+@media screen and (max-height: 520px) {
+    .profile-img{
+        top: 72%;  
+    }
+
+    h1{
+        top: 28%;
     }
 }
 
