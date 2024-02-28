@@ -11,6 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8px;
 }
 
 h1{
@@ -31,14 +32,14 @@ h1{
 
 .relogio div {
     height: 170px;
-    width: 150px;
+    width: 145px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #000;
-    border: 2px solid black;
-    border-radius: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
     letter-spacing: 3px;
     transition: all 0.3s ease-in-out;
 }
@@ -58,7 +59,7 @@ h1{
 
 .profile-img{
     position: absolute;
-    top: 62%;
+    top: 63%;
     
 }
 
@@ -79,8 +80,42 @@ h1{
     background-color: rgba(51, 51, 51, 0.205);
 }
 
+@media screen and (max-width: 580px){
+    .relogio {
+        height: 150px;
+        width: 400px;
+    }
+
+    .relogio div {
+        height: 145px;
+        width: 145px;
+        margin: 0 8px;
+    }
+
+    .relogio span {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    .profile-img{
+        top: 65%;  
+    }
+
+    h1{
+        top: 35%;
+    }
+}
+
+@media screen and (max-height: 630px) {
+    .profile-img{
+        top: 68%;  
+    }
+
+    h1{
+        top: 31%;
+    }
+}
 
 
 
-
-/***Feito por Larissa V. Kich***/
